@@ -47,7 +47,7 @@ def isIdentifier(userInput):
         return False
 
         
-def isCharacter(userInput):
+def isChar(userInput):
     if len(userInput) == 1:
         return True
     else:
@@ -59,10 +59,10 @@ isValidIdentifier = input("Enter to check if identifier is valid or not: ")
 if isInt(userInput):
     print(f"{userInput} is an integer")
 elif isFloat(userInput):
-    print(f"{userInput} is a float")
-elif isString(userInput):
-    print(f"{userInput} is a string")
+    print(f"{userInput} is a float")    
 elif isChar(userInput):
     print(f"{userInput} is a character")
+elif isString(userInput):
+    print(f"{userInput} is a string")
     
 isIdentifier(isValidIdentifier)
